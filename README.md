@@ -1,6 +1,8 @@
 # Gravity
 Prototype of a physics-driven space sandbox game. Create stars and planets, watch them interact, beware of alien wars and use the gravity.
 
+[Download](https://www.dropbox.com/s/h2yu0ic43p4hk2l/gravity.apk?raw=1)
+
 ##### How to play
 
  - press to create a celestial body
