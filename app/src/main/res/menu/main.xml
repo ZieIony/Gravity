@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_collisions"
+        android:checkable="true"
+        android:checked="true"
+        android:enabled="true"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Collisions"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menu_holes"
+        android:checkable="true"
+        android:checked="true"
+        android:enabled="true"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Black Holes"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/menu_unstable"
+        android:checkable="true"
+        android:checked="true"
+        android:enabled="true"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Unstable Stars"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/menu_accelerometer"
+        android:checkable="true"
+        android:checked="true"
+        android:enabled="true"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Accelerometer"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/menu_labels"
+        android:checkable="true"
+        android:checked="true"
+        android:enabled="true"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Labels"
+        android:visible="true"/>
+
+</menu>
