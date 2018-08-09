@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:src="@drawable/ic_launcher" />
+            android:src="@mipmap/ic_launcher" />
 
         <TextView
             android:id="@+id/description"

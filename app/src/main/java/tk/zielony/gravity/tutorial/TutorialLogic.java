@@ -1,9 +1,9 @@
 package tk.zielony.gravity.tutorial;
 
 public interface TutorialLogic {
-	void onStart();
+    void onStart();
 
-	void onFinished();
-	
-	boolean isFinished();
+    void onFinished();
+
+    boolean isFinished();
 }

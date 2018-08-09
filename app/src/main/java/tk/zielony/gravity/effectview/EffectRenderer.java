@@ -1,8 +1,18 @@
-/** 
+/**
  * The OpenGL renderer
  */
 
 package tk.zielony.gravity.effectview;
+
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
+import android.graphics.drawable.BitmapDrawable;
+import android.opengl.GLES20;
+import android.opengl.GLSurfaceView;
+import android.opengl.GLUtils;
+import android.opengl.Matrix;
+import android.util.Log;
 
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
@@ -16,16 +26,6 @@ import java.util.List;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
-import android.app.Activity;
-import android.graphics.Bitmap;
-import android.graphics.Bitmap.Config;
-import android.graphics.drawable.BitmapDrawable;
-import android.opengl.GLES20;
-import android.opengl.GLSurfaceView;
-import android.opengl.GLUtils;
-import android.opengl.Matrix;
-import android.util.Log;
-
 public class EffectRenderer implements GLSurfaceView.Renderer {
     public float mAngleX;
     public float mAngleY;
@@ -37,11 +37,11 @@ public class EffectRenderer implements GLSurfaceView.Renderer {
     private Effect shader;
 
     // vertex information - clockwise
-    final float _quadv[] = { 0, 0, 0, 1, 1, 1, 1, 0 };
+    final float _quadv[] = {0, 0, 0, 1, 1, 1, 1, 0};
 
     private FloatBuffer vertexBuffer;
     // index
-    final int _quadi[] = { 0, 1, 2, 2, 3, 0 };
+    final int _quadi[] = {0, 1, 2, 2, 3, 0};
     private IntBuffer indexBuffer;
 
     // Modelview/Projection matrices
@@ -72,8 +72,8 @@ public class EffectRenderer implements GLSurfaceView.Renderer {
      * Draw function - called for every frame
      */
     public synchronized void onDrawFrame(final GL10 glUnused) {
-    	effectView.draw();
-    	
+        effectView.draw();
+
         while (!initializers.isEmpty()) {
             initializers.remove(0).run();
         }
@@ -84,7 +84,7 @@ public class EffectRenderer implements GLSurfaceView.Renderer {
 
     /*
      * Called when viewport is changed
-     * 
+     *
      * @see
      * android.opengl.GLSurfaceView$Renderer#onSurfaceChanged(javax.microedition
      * .khronos.opengles.GL10, int, int)

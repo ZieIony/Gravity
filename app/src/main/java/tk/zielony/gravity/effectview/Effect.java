@@ -1,12 +1,12 @@
 package tk.zielony.gravity.effectview;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-
 import android.content.Context;
 import android.opengl.GLES20;
 import android.util.Log;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class Effect {
     private static final String TAG = Effect.class.getSimpleName();
